@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe 
+    width="600" 
+    height="450" 
+    frameborder="0" 
+    style="border:0" 
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAx8urlErdmGC74djnoImCUmOsyWb_aIco&q=高雄市政府" 
+    allowfullscreen>
+</iframe>
+<script>
+(function() {
+    var geolocation = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAx8urlErdmGC74djnoImCUmOsyWb_aIco';
+    xhr = new XMLHttpRequest();
+    xhr.open('POST', geolocation);
+    xhr.onload = function () {
+        var response = JSON.parse(this.responseText);
+        console.log(response);
+    }
+    xhr.send();
+})();
+</script>
+</body>
+</html>

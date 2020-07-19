@@ -1,0 +1,19 @@
+.bg-orange{
+    background-color: #fd7114;
+}
+.bg-yellow{
+    background-color: #ffc107;
+}
+.badge-orange{
+    background-color: #fd7114;
+    color:black;
+}
+.btn-orange{
+    color:black;
+    background-color: #fd7114;
+    border-color: #fd7114;
+    margin:2px;
+}
+.btn-pill{
+    border-radius: 5em;
+}
