@@ -1129,6 +1129,7 @@
 	getAJAXData=function(){
 		// 取得站內資料
 		let url=`https://quality.data.gov.tw/dq_download_json.php?nid=123026&md5_url=4d8de527a0bcd8a7b1aeae91120f021d`
+		// let url=`https://quality.data.gov.tw/dq_download_json.php?nid=123026&md5_url=4d8de527a0bcd8a7b1aeae91120f021d`
 		let AJAXdata=getJSON(url).
 		then((value) =>{
 			value=value.substring(0,value.indexOf(']')+1)
@@ -1140,7 +1141,7 @@
 	function getJSON(url) {
 		// 取得新北市ubike資料
 	    return new Promise(function (resolve, reject) {
-	        $.post("./api/getJSON.php",{url},function(data){
+	        $.post("https://github.com/gundog80/exercise_ubike.github.io/tree/master/api/getJSON.php",{url},function(data){
 	            resolve(data)
 	        });
 	    });
