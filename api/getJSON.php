@@ -1,5 +1,6 @@
 <?php
     // 設定接受所有來源的AJAX
+    // header('Access-Control-Allow-Origin:*');
     header("Access-Control-Allow-Origin: *");
     if(!empty($_POST["url"])){
         // 初始化 curl
