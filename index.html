@@ -1099,7 +1099,7 @@
 	function getInternalData(data) {
 		return new Promise(function (resolve, reject) {
 			// console.log("hi2")
-			axios.post("./api/data.php",{'data':data})
+			axios.post("220.128.133.15/s1080317/ubkie/api/data.php",{'data':data})
          .then(function(res){
 				resolve(JSON.parse(res.data))
 			});
